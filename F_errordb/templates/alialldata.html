@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alialldata</title>
+    <style type="text/css">
+        ul {
+            display: table;
+            margin: 40px auto;
+        }
+
+        li {
+            display: table-cell;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px 8px;
+            background-color: white;
+            color: #000;
+            margin-right: 1px;
+        }
+
+        ul li a:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .dt {
+            height: 30px;
+            margin-top: 35px;
+            border: 35px;
+            padding: auto 50px;
+        }
+
+        .dt {
+            display: inline-block
+        }
+    </style>
+    <!--<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.10.0.js') }}"></script>-->
+</head>
+<body>
+<div>
+    <table width="98%" border="1" cellpadding="1" cellspacing="1">
+        <tr>
+            <td align="center" style="color:red;background:gray;font-size:25px;">error_code</td>
+            <td align="center" style="color:red;background:gray;font-size:25px;">key_word</td>
+            <td align="center" style="color:red;background:gray;font-size:25px;">fail_detail</td>
+        </tr>
+        {% for key in keys %}
+        <tr>
+            <td style="word-break: normal">{{ key[0] }}</td>
+            <td style="word-break: normal">{{ key[1] }}</td>
+            <td style="word-break: normal">{{ key[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div>
+    <ul>
+        <li style="background:gray;">
+            {% for i in range(1, pages+1) %}
+            <!--<a href="/alikeydb/{{ i }}">{{ i }}</a>-->
+            <a href="{{ url_for('get_keys_db', page_num=i) }}">{{ i }}</a>
+            {% endfor %}
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+    <!--<a class="dt" type="button" href="/ali">首页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index1') }}">首页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/aliseadb/">搜索页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index3') }}">搜索页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alichdb/">修改页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index2') }}">修改页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="dt" type="button" href="{{ url_for('index5') }}">删除页</a>
+</div>
+</body>
+</html>

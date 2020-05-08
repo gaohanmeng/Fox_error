@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alichangedb</title>
+    <style type="text/css">
+        .ct {
+            background: blue
+        }
+
+        .dt {
+            height: 30px;
+            margin-top: 35px;
+            border: 35px;
+            padding: auto 50px;
+        }
+
+        .dt {
+            display: inline-block
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <!--<form action="/alichadb/" method="post">-->
+    <form action="{{ url_for('change_db') }}" method="post">
+        <span>请输入原始的 KEY WORD:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="row_keys" id="row_keys">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请确认输入的 KEY WORD:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="confirm_keys" id="confirm_keys">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请输入修改的 KEY WORD:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="change_keys" id="new_keys">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="ct" type="submit" value="修改">
+        <br>
+        <br>
+        <hr>
+        <span>请输入原始的 ERROR CODE:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="row_codes" id="row_codes">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请确认输入的 ERROR CODE:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="confirm_codes" id="confirm_codes">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请输入修改的 ERROR CODE:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="change_codes" id="new_codes">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="ct" type="submit" value="修改">
+        <br>
+        <br>
+        <hr>
+        <span>请输入原始的 FAIL DETAIL:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="row_detail" id="row_detail">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请确认输入的 FAIL DETAIL:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="confirm_detail" id="confirm_detail">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请输入修改的 FAIL DETAIL:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" name="new_detail" id="new_detail">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="ct" type="submit" value="修改">
+        <br>
+        <br>
+        <hr>
+        <span style="font-size:35px;">修改的结果是:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <!--{% with messages = get_flashed_messages() %}-->
+        <!--{% if messages %}-->
+        <!--<ul class="flashes" id="code_list">-->
+        <!--{% for message in messages %}-->
+        <!--<li style="color:red;font-size:35px;">{{ message }}</li>-->
+        <!--{% endfor %}-->
+        <!--</ul>-->
+        <!--{% endif %}-->
+        <!--{% endwith %}-->
+        <table width="98%" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">error_code</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">key_word</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">fail_detail</td>
+            </tr>
+            {% for update_key in update_keys %}
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_key[0] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_key[1] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_key[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+    <!--<a class="dt" type="button" href="/ali">首页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index1') }}">首页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/aliseadb/">搜索页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index3') }}">搜索页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="dt" type="button" href="{{ url_for('index5') }}">删除页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alidata/">统计页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index4') }}">统计页</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deletedb</title>
+    <style>
+        .dt {
+            height: 30px;
+            margin-top: 35px;
+            border: 35px;
+            padding: auto 50px;
+            margin: 40px auto;
+        }
+
+        .dt {
+            display: inline-block
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <form class="dt" action="{{ url_for('del_keys_db') }}" method="post">
+        <span>请输入需要删除的ERROR CODE:</span>
+        <input type="text" name="delete_codes">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>或者&nbsp;&nbsp;请输入需要删除的KEY WORD:</span>
+        <input type="text" name="delete_words">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>或者&nbsp;&nbsp;请输入需要删除的FAIL DETAIL:</span>
+        <input type="text" name="delete_details">
+        <input class="ct" id="check_content" type="submit" value="查看内容">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="ct" id="delete_content" type="submit" value="删除">
+        <br>
+        <br>
+        <hr>
+        <span style="font-size:35px;">删除结果:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <table width="98%" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">error_code</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">key_word</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">fail_detail</td>
+            </tr>
+            {% for delete_result in delete_results %}
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[0] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[1] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <form action="">
+        <span style="font-size:35px;">删除内容:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <table width="98%" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">error_code</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">key_word</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">fail_detail</td>
+            </tr>
+            {% for delete_result in delete_results %}
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[0] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[1] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ delete_result[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+    <hr>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+    <a class="dt" type="button" href="{{ url_for('index1') }}">首页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/aliseadb/">搜索页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index3') }}">搜索页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alichdb/">修改页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index2') }}">修改页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="dt" type="button" href="{{ url_for('index4') }}">统计页</a>
+</div>
+</body>
+</html>

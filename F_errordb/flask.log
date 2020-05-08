@@ -1,0 +1,174 @@
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:17] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:17] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:17] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 13:54:25
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:25] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:25] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:35] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:54:53] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:admin 密码:admin 登录时间:2020-04-06 13:55:04
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:55:04] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:55:04] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:登录时间:2020-04-06 13:55:30 添加数据:([u'666', u'666', u'666'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:55:30] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:alidata:登录时间:2020-04-06 13:55:34 添加数据:([u'777', u'777', u'777'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:55:34] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 13:55:38] "GET /alidata/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:35] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:35] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:36] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:50] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:50] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 14:08:57
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:57] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:08:58] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:账号:admin 密码:admin 登录时间:2020-04-06 14:09:10
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:09:10] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:09:10] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:登录账号:admin 登录时间:2020-04-06 14:09:19 添加数据:([u'888', u'888', u'888'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:09:19] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:alidata:登录账号:admin 登录时间:2020-04-06 14:09:28 添加数据:([u'999', u'999', u'999'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:09:28] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:37:16] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:37:16] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:37:16] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:37:32] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号admn 密码:admin 登录时间:2020-04-06 14:38:06
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:06] "POST /login/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:15] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:admin 密码:admin 登录时间:2020-04-06 14:38:23
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:23] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:23] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 14:38:25
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:25] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:25] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:账号None 密码:None 登录时间:2020-04-06 14:38:42
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:43] "POST /aliadddb/ HTTP/1.1" 500 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:44] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:44] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:44] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:45] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:46] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:38:46] "GET /aliadddb/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:42:13] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 14:42:21
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:42:21] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:42:22] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:44:24] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:admin 密码:admin 登录时间:2020-04-06 14:44:36
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:44:36] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:44:36] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:47:35] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:47:35] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:47:49] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:admin 密码:admin 登录时间:2020-04-06 14:48:03
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:03] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:03] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 14:48:05
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:05] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:05] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:09] "GET /alidata/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:11] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:登录账号:H7112589 登录时间:2020-04-06 14:48:20 添加数据:([u'bbb', u'bbb', u'bbb'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:20] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:alidata:登录账号:admin 登录时间:2020-04-06 14:48:30 添加数据:([u'ccc', u'ccc', u'ccc'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:48:30] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:59:41] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:59:43] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:alidata:登录账号:admin 登录时间:2020:04:06 14:59:50 删除数据:([u'aaa', u'aaa', u'aaa'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:59:50] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 14:59:59] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:alidata:登录账号:H7112589 登录时间:2020:04:06 15:00:06 删除数据:([u'bbb', u'bbb', u'bbb'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:00:06] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:16] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-06 15:20:24
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:24] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:24] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:43] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 登录时间:2020:04:06 15:20:49 删除数据:([u'ccc', u'ccc', u'ccc'],)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 15:20:49] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 16:31:37] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 16:31:39] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 16:31:50] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [06/Apr/2020 16:31:52] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 11:28:26] "GET / HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-08 11:28:43
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 11:28:43] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 11:28:43] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 11:28:46] "GET /alidata/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 11:28:48] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:06] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:06] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:06] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-08 17:05:15
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:15] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:15] "GET /ali HTTP/1.1" 200 -
+INFO:alidata:账号:H7112589 登录时间:2020-04-08 17:05:34 添加数据:([u'AAA', u'AAA', u'AAA'],)
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:34] "POST /aliadddb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:36] "GET /alichdb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:39] "GET /aliseadb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:05:49] "POST /aliseardb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:00] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:03] "POST /alideldb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:06] "GET /alideledb/ HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-307-407
+INFO:werkzeug: * Running on http://10.67.71.132:35115/ (Press CTRL+C to quit)
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:32] "GET /ali HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:32] "GET /?next=%2Fali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:32] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:alidata:账号:H7112589 密码:123456 登录时间:2020-04-08 17:06:40
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:40] "POST /login/ HTTP/1.1" 302 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:40] "GET /ali HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:43] "GET /aliseadb/ HTTP/1.1" 200 -
+INFO:werkzeug:10.67.71.132 - - [08/Apr/2020 17:06:48] "POST /aliseardb/ HTTP/1.1" 200 -

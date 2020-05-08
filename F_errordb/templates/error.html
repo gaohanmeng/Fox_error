@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>error_msg</title>
+    <style>
+        .ct {
+            background: Red;
+            height: 60px;
+            margin-top: 200px;
+            margin-left: 765px;
+            border: 85px;
+        <!-- padding: auto 400 px;
+        -->
+        }
+
+        .dt {
+            background: white;
+            height: 50px;
+            margin-top: 200px;
+            margin-left: 40px;
+            border: 85px;
+            padding: auto 400px;
+        }
+    </style>
+</head>
+<body>
+<input align="center" class="ct" type="button" value="输入信息有误　请重新输入">
+<!--<a class="dt" type="button" href="/aliseadb/">返回</a>-->
+<!--<a class="dt" type="button" href="{{ url_for('index3') }}">返回</a>-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+    <!--<a class="dt" type="button" href="/ali">返回首页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index1') }}">返回首页</a>
+    <!--<a class="dt" type="button" href="/aliseadb/">返回搜索页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index3') }}">返回搜索页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alichdb/">返回修改页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index2') }}">返回修改页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="dt" type="button" href="{{ url_for('index5') }}">返回删除页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alidata/">返回统计页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index4') }}">返回统计页</a>
+</div>
+</body>
+</html>

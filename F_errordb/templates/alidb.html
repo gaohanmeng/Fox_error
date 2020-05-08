@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aliadddb</title>
+    <style type="text/css">
+
+        .bt {
+            background: white
+        }
+
+        .ct {
+            background: red
+        }
+
+        .et {
+            background: blue
+        }
+
+        .dt {
+            height: 30px;
+            margin-top: 35px;
+            border: 35px;
+            padding: auto 50px;
+            margin: 40px auto;
+        }
+
+        .dt {
+            display: inline-block
+        }
+    </style>
+    <!--<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.10.0.js') }}"></script>-->
+</head>
+<body>
+<div align="center">
+    <hr>
+    <!--<form class="dt" action="/aliadddb/" method="POST">-->
+    <form class="dt" action="{{ url_for('add_keys_db') }}" method="POST">
+        {{ csrf_token }}
+        <span>请输入需要添加的ERROR CODE:</span>
+        <input type="text" name="error2_code">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请输入需要添加的KEY WORD:</span>
+        <input type="text" name="key2_word">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>请输入需要添加的FAIL DETAIL:</span>
+        <input type="text" name="fail2_detail">
+        <input class="ct" type="submit" value="添加">
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <span style="font-size:35px;">最后添加记录:</span>
+        <table width="98%" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">error_code</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">key_word</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">fail_detail</td>
+            </tr>
+            {% for insert_result in insert_results %}
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ insert_result[0] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ insert_result[1] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ insert_result[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <br>
+        <hr>
+        <span style="font-size:35px;">最后修改记录:</span>
+        <table width="98%" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">error_code</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">key_word</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">fail_detail</td>
+            </tr>
+            {% for update_result in update_results %}
+            <tr>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_result[0] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_result[1] }}</td>
+                <td align="center" style="color:red;background:#B8B8B8;font-size:25px;">{{ update_result[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div align="center">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/aliseadb/">搜索页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index3') }}">搜索页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alichdb/">修改页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index2') }}">修改页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="dt" type="button" href="{{ url_for('index5') }}">删除页</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!--<a class="dt" type="button" href="/alidata/">统计页</a>-->
+    <a class="dt" type="button" href="{{ url_for('index4') }}">统计页</a>
+</div>
+</body>
+</html>
